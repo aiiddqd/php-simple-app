@@ -10,3 +10,5 @@ echo '$_ENV:';
 var_dump($_ENV);
 echo '$_SERVER:';
 var_dump($_SERVER);
+
+phpinfo();
