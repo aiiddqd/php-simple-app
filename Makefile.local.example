@@ -1,5 +1,0 @@
-## This is an example of a Makefile.local file. It contains some example of
-## variables you can define.
-##
-## Makefile.local must be only local: you must not distribute it. It must
-## contain the local configuration for your development workflow.
