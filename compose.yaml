@@ -18,7 +18,7 @@ services:
     working_dir: /app
     command: php -S 0.0.0.0:8000
     environment:
-      - APP_ENV=staging
+      - APP_ENV=staging2
       - APP_KEY=${APP_KEY:-appTestKey!}
       - APP_DEBUG=true
       - APP_NAME=${APP_NAME:-Laravel}
