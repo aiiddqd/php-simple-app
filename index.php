@@ -2,6 +2,7 @@
 
 echo "Hello, World!" . PHP_EOL;
 echo "Hello, World! 2" . PHP_EOL;
+echo "Hello, World! 3" . PHP_EOL;
 
 $env_test = getenv($_GET['key'] ?? 'APP_KEY');
 echo "env_test: " . $env_test;

@@ -13,8 +13,13 @@ services:
       interval: 100s
       timeout: 5s
       retries: 3
+    # volumes:
+    #   - .:/app
     volumes:
-      - .:/app
+      - type: bind
+        source: ./
+        target: /app
+        is_directory: true   # Instructs Coolify to create the directory.
     working_dir: /app
     command: php -S 0.0.0.0:8000
     environment:
