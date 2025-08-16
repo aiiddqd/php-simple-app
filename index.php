@@ -1,12 +1,4 @@
 <?php
-if (function_exists('opcache_reset')) {
-    // Reset the entire OPcache
-    opcache_reset();
-    echo "OPcache cleared successfully.";
-} else {
-    echo "OPcache is not enabled.";
-}
-clearstatcache();
 
 echo "Hello, World!".PHP_EOL;
 echo "Hello, World! 2".PHP_EOL;
