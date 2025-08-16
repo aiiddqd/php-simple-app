@@ -13,23 +13,19 @@ services:
       interval: 100s
       timeout: 5s
       retries: 3
-    # volumes:
-    #   - .:/app
     volumes:
-      - type: bind
-        source: ./
-        target: /app
-        is_directory: true   # Instructs Coolify to create the directory.
-    # working_dir: /app
+      - .:/app
+    
+    working_dir: /app
     command: php -S 0.0.0.0:8000
     environment:
-      - APP_ENV=${APP_ENV}
-      - APP_KEY=${APP_KEY:-appTestKey!}
-      - APP_DEBUG=true
-      - APP_NAME=${APP_NAME:-Laravel}
-      - DB_CONNECTION=${DB_CONNECTION:-mysql}
-      - DB_HOST=${DB_HOST:-mysql}
-      - DB_PORT=${DB_PORT:-3306}
-      - DB_DATABASE=${DB_DATABASE:-laravel}
-      - DB_USERNAME=${DB_USERNAME:-root}
-      - DB_PASSWORD=${DB_PASSWORD:-root}
+      # - APP_ENV=${APP_ENV}
+      # - APP_KEY=${APP_KEY:-appTestKey!}
+      # - APP_DEBUG=true
+      # - APP_NAME=${APP_NAME:-Laravel}
+      # - DB_CONNECTION=${DB_CONNECTION:-mysql}
+      # - DB_HOST=${DB_HOST:-mysql}
+      # - DB_PORT=${DB_PORT:-3306}
+      # - DB_DATABASE=${DB_DATABASE:-laravel}
+      # - DB_USERNAME=${DB_USERNAME:-root}
+      # - DB_PASSWORD=${DB_PASSWORD:-root}
